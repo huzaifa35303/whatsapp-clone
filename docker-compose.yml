@@ -1,0 +1,19 @@
+services:
+  whatsapp-clone:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: whatsapp-clone-server
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+    volumes:
+      - whatsapp_uploads:/app/uploads
+      - whatsapp_data:/app/data
+
+volumes:
+  whatsapp_uploads:
+  whatsapp_data:

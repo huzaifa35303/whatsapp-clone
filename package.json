@@ -1,0 +1,17 @@
+{
+  "name": "whatsapp-clone-monorepo",
+  "version": "1.0.0",
+  "description": "WhatsApp Clone for Desktop (Windows Electron) and Android Mobile (Capacitor)",
+  "scripts": {
+    "start:backend": "cd backend && npm run dev",
+    "start:client": "cd client && npm run dev",
+    "dev": "npx concurrently \"npm run start:backend\" \"npm run start:client\"",
+    "build:client": "cd client && npm run build",
+    "electron:dev": "cd client && npm run electron:dev",
+    "android:sync": "cd client && npm run cap:sync",
+    "android:open": "cd client && npm run cap:open:android"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}

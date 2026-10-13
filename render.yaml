@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: whatsapp-clone-server
+    runtime: node
+    plan: free
+    buildCommand: "cd client && npm install && npm run build && cd ../backend && npm install && npm run build"
+    startCommand: "cd backend && npm start"
+    envVars:
+      - key: NODE_VERSION
+        value: "22.12.0"
+      - key: PORT
+        value: "5000"

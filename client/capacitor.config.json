@@ -1,0 +1,15 @@
+{
+  "appId": "com.whatsapp.clone",
+  "appName": "WhatsApp",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "backgroundColor": "#111b21"
+    }
+  }
+}
