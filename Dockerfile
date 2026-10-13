@@ -36,4 +36,4 @@ EXPOSE 5000
 
 VOLUME ["/app/uploads", "/app/data"]
 
-CMD ["node", "dist/server.js"]
+CMD ["node", "--experimental-sqlite", "dist/server.js"]
